@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOT YET</title>
+    <script src="somt.js"></script>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        #commentBox {
+            width: 100%;
+            max-width: 500px;
+            margin: 20px 0;
+        }
+        #comments {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #comments li {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        /* Add more styles as needed */
+    </style>
+</head>
+<body>
+    <button onclick="login()">login</button>
+    <header>
+        <h1>MY FIRST WEBSITE</h1>
+        <p>Welcome to MY website!</p>
+    </header>
+
+    <nav>
+        <!-- Add your navigation links here -->
+        <a href="myhtml.html"> my guess game</a>
+        <a href="abtme">About</a>
+        <a href="#">Contact</a>
+        
+        
+    </nav>
+
+    <section>
+        <!-- Add your main content here -->
+        <h2>Main Content</h2>
+        <p>TO BE UPDATED..........</p>
+    </section>
+    <script>
+            function addComment() {
+            // Get the comment input value
+            var commentInput = document.getElementById("commentInput");
+            var commentText = commentInput.value;
+
+            // Clear the comment input
+            commentInput.value = "";
+
+            // Create a new list item for the comment
+            var newComment = document.createElement("li");
+            newComment.textContent = commentText;
+
+            // Append the new comment to the comments list
+            var commentsList = document.getElementById("comments");
+            commentsList.appendChild(newComment);
+        }   
+        
+    </script>
+
+    <footer>
+        <!-- Add your footer content here -->
+        <p>&copy; 2023 MY FIRST WEBSITE. All rights reserved.</p>
+    </footer>
+    <div id="commentBox">
+        <h2>Comments</h2>
+        <ul id="comments"></ul>
+        <textarea id="commentInput" placeholder="Add your comment"></textarea>
+        <button onclick="addComment()">Add Comment</button>
+    </div>
+    <img src="anatomy-of-the-heart-768x768.webp" alt="Image in Top Left Corner">
+</body>
+</html>
